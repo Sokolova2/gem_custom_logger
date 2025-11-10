@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require '../gem_custom_logger'
+require 'gem_custom_logger'
 
 module GemCustomLogger
   class Railtie < Rails::Railtie
