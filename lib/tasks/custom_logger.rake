@@ -2,7 +2,7 @@
 
 namespace :custom_logger do
   desc "This task for custom rails command"
-  task :custom_logger, [:message] => environment do |t, args|
+  task :custom_logger, [:message] => :environment do |t, args|
     puts "My custom logger: #{args.message || 'Welcome in GemCustomLogger'}"
   end
 end
